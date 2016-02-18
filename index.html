@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pikday Material</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./css/pikaday.css">
+    <style type="text/css" media="screen">
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        [type="text"] {
+            font-weight: 400;
+            width: 100%;
+            color: #333;
+            border: none;
+            background: 0 0;
+            margin: 0;
+            padding: 1px 3px;
+            font-size: 14px;
+            line-height: 14px;
+            outline: 0;
+            transition: all .3s cubic-bezier(.64, .09, .08, 1);
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            height: 37px
+        }
+        .form-field {
+            width: 100%;
+            max-width: 300px;
+            margin: 10% auto;
+            border-bottom: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-field">
+        <input type="text" id="datepicker" placeholder="Date">
+    </div>
+</body>
+<!-- <script src="./moment/moment.js" type="text/javascript"></script> -->
+<script src="./pikaday/pikaday.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var picker = new Pikaday({ field: document.getElementById('datepicker') });
+    </script>
+</html>
